@@ -226,6 +226,51 @@ public class XuanxuanTest1 {
         Thread.sleep(3000);
     }
     @Test
+    //点击我的页面关于
+    public void testAbout() throws InterruptedException {
+        mDevice.click(400,788);
+        Thread.sleep(3000);
+        mDevice.findObject(By.desc("显示菜单")).click();
+        Thread.sleep(3000);
+        //点击关于
+        mDevice.click(1360,66);
+        Thread.sleep(1000);
+        mDevice.findObject(By.desc("隐私条款")).click();
+        //mDevice.click(593,538);  点击网址
+        Thread.sleep(2000);
+        mDevice.click(320,548);//点击百度
+        Thread.sleep(2000);
+        mDevice.click(968,788);//点击仅此一次
+        Thread.sleep(2000);
+    }
+    @Test
+    public void testAbout1() throws InterruptedException {
+        mDevice.click(400,788);
+        Thread.sleep(3000);
+        mDevice.findObject(By.desc("显示菜单")).click();
+        Thread.sleep(3000);
+        //点击关于
+        mDevice.click(1360,66);
+        Thread.sleep(1000);
+        mDevice.click(593,538);  //点击网址
+        Thread.sleep(2000);
+        mDevice.click(320,660);//点击浏览器
+        Thread.sleep(2000);
+        mDevice.click(1128,788);//点击始终
+        Thread.sleep(2000);
+    }
+    @Test
+    public void testAbout2() throws InterruptedException {
+        mDevice.click(400,788);
+        Thread.sleep(3000);
+        mDevice.findObject(By.desc("显示菜单")).click();
+        Thread.sleep(3000);
+        //点击关于
+        mDevice.click(1360,66);
+        Thread.sleep(2000);
+        mDevice.findObject(By.desc("关闭")).click();
+    }
+    @Test
     //注销
     public void testCancel() throws InterruptedException {
         //点击我的
